@@ -142,6 +142,10 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {color: #f22;}
 /* The rest of this file contains styles related to the mechanics of
    the editor. You probably shouldn't touch them. */
 
+.raml-console-sidebar-input {
+  height: 100%;
+}
+
 .CodeMirror {
   line-height: 1;
   position: relative;
