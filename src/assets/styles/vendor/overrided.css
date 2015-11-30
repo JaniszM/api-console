@@ -1,0 +1,10 @@
+/* OVERRIDES generated styles */
+
+.raml-console-sidebar-input {
+  height: 100%;
+}
+
+.raml-console-sidebar-input-tooltip-container {
+    top: 45px;
+    bottom: initial;
+}
