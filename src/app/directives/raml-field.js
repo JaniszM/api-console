@@ -52,6 +52,18 @@
           }
         };
 
+        /**
+         * Event on mouse down. Sets parameters of the option tags.
+         * 
+         * @param $event Event var.
+         */
+        /* TODO: Commented because this mouse selections are not catched in the queryParameters even if select value is set.
+        $scope.onMouseDown = function($event) {
+            $event.preventDefault();
+          var $this = jQuery($event.currentTarget);
+            $this.prop('selected', $this.prop('selected') ? false : true);
+        };*/
+
         $scope.onChange = function() {
           $scope.$parent.context.forceRequest = false;
         };

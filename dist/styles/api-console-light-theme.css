@@ -4880,3 +4880,14 @@ view-port
 .cm-s-raml-console .CodeMirror-activeline-background {
   background: rgba(0, 0, 0, 0.10);
 }
+
+/* OVERRIDES generated styles */
+
+.raml-console-sidebar-input {
+  height: 100%;
+}
+
+.raml-console-sidebar-input-tooltip-container {
+    top: 45px;
+    bottom: initial;
+}
