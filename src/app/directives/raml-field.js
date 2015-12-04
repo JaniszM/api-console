@@ -73,11 +73,11 @@
         };
 
         $scope.isEnum = function(definition) {
-          return (typeof definition['enum'] !== 'undefined' && definition.repeat !== true);
+          return (typeof definition['enum'] !== 'undefined' && !definition.repeat);
         };
 
         $scope.isMultiEnum = function(definition) {
-          return (typeof definition['enum'] !== 'undefined' && definition.repeat === true);
+          return (typeof definition['enum'] !== 'undefined' && !!definition.repeat);
         };
 
         $scope.isBoolean = function(definition) {
