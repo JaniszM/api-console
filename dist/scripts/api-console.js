@@ -755,11 +755,11 @@
         };
 
         $scope.isEnum = function(definition) {
-          return (typeof definition['enum'] !== 'undefined' && definition.repeat !== true);
+          return (typeof definition['enum'] !== 'undefined' && !definition.repeat);
         };
 
         $scope.isMultiEnum = function(definition) {
-          return (typeof definition['enum'] !== 'undefined' && definition.repeat === true);
+          return (typeof definition['enum'] !== 'undefined' && !!definition.repeat);
         };
 
         $scope.isBoolean = function(definition) {
@@ -5562,7 +5562,7 @@ angular.module('ramlConsoleApp').run(['$templateCache', function($templateCache)
     "   <option ng-repeat=\"enum in unique(param.enum)\" value=\"{{enum}}\">{{enum}}</option>\n" +
     "  </select>\n" +
     "\n" +
-    "  <select id=\"select_{{param.id}}\" ng-if=\"isMultiEnum(param)\" data-ng-attr-size=\"{{param.enum.length}}\" name=\"param.id\" class=\"raml-console-sidebar-input\" ng-model=\"model[0]\" style=\"margin-bottom: 0;\" ng-change=\"onChange()\" multiple>\n" +
+    "  <select id=\"select_{{param.id}}\" ng-if=\"isMultiEnum(param)\" data-ng-attr-size=\"{{param.enum.length}}\" name=\"param.id\" class=\"raml-console-sidebar-input raml-console-sidebar-input-multiEnum\" ng-model=\"model[0]\" style=\"margin-bottom: 0;\" ng-change=\"onChange()\" multiple>\n" +
     "   <!-- ng-mousedown=\"onMouseDown($event)\" Add this param to <option> to catch mouse click and uncomment function in the raml-field.js -->\n" +
     "   <option ng-repeat=\"enum in unique(param.enum)\" value=\"{{enum}}\">{{enum}}</option>\n" +
     "  </select>\n" +

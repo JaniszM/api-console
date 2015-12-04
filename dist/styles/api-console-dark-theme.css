@@ -4885,11 +4885,7 @@ view-port
 
 /* OVERRIDES generated styles */
 
-.raml-console-sidebar-input {
+/* Special style for multi-value enum field. */
+.raml-console-sidebar-input-multiEnum {
   height: 100%;
-}
-
-.raml-console-sidebar-input-tooltip-container {
-    top: 45px;
-    bottom: initial;
 }

@@ -12,7 +12,7 @@
    <option ng-repeat="enum in unique(param.enum)" value="{{enum}}">{{enum}}</option>
   </select>
 
-  <select id="select_{{param.id}}" ng-if="isMultiEnum(param)" data-ng-attr-size="{{param.enum.length}}" name="param.id" class="raml-console-sidebar-input" ng-model="model[0]" style="margin-bottom: 0;" ng-change="onChange()" multiple>
+  <select id="select_{{param.id}}" ng-if="isMultiEnum(param)" data-ng-attr-size="{{param.enum.length}}" name="param.id" class="raml-console-sidebar-input raml-console-sidebar-input-multiEnum" ng-model="model[0]" style="margin-bottom: 0;" ng-change="onChange()" multiple>
    <!-- ng-mousedown="onMouseDown($event)" Add this param to <option> to catch mouse click and uncomment function in the raml-field.js -->
    <option ng-repeat="enum in unique(param.enum)" value="{{enum}}">{{enum}}</option>
   </select>
